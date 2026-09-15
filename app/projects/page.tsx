@@ -1,7 +1,9 @@
 import ProjectList from "@/components/ProjectList";
 import { getProjects } from "@/lib/projects-db";
+import { connection } from "next/server";
 
 export default async function ProjectsPage() {
+  await connection();
   const projects = await getProjects();
 
   return (
