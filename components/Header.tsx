@@ -18,6 +18,11 @@ export default function Header() {
                                 About
                             </Link>
                         </li>
+                        <li>
+                            <Link href="/projects" className="hover:underline">
+                                Projects
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
